@@ -1,0 +1,42 @@
+{
+  "recommendations": [
+    
+    /* JavaScript --------------------------------------------------------------- */
+    
+    // "meganrogge.template-string-converter",
+    // "NuclleaR.vscode-extension-auto-import",
+    // "Tobermory.es6-string-html",
+
+    /* TypeScript --------------------------------------------------------------- */
+
+    // "paulshen.paul-typescript-toolkit",
+    // "loiane.ts-extension-pack",
+    // "quicktype.quicktype",
+    
+    /* Node.js ------------------------------------------------------------------ */
+    
+    // "chrisbibby.hide-node-modules",
+    // "jasonnutter.search-node-modules",
+    // "mikestead.dotenv",
+
+    /* Linter, Formatter -------------------------------------------------------- */
+    
+    // "dbaeumer.vscode-eslint",
+    // "esbenp.prettier-vscode",
+    // "rebornix.toggle",
+
+    /* Test --------------------------------------------------------------------- */
+    
+    // "Orta.vscode-jest",
+    // "ZixuanChen.vitest-explorer",
+
+    /* Editor ------------------------------------------------------------------- */
+
+    // "sculove.translator",
+
+    /* RESTful Client ----------------------------------------------------------- */
+
+    // "rangav.vscode-thunder-client",
+
+  ]
+}
