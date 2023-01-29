@@ -11,7 +11,7 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Localhost：Chrome 디버깅",
+      "name": "Chrome 디버깅",
       "url": "http://localhost:6006",
       "webRoot": "${workspaceFolder}",
       "cwd": "${workspaceFolder}",
