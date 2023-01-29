@@ -1,4 +1,3 @@
-"use strict";
 /* -------------------------------------------------------------------------- */
 /* Primitives                                                                 */
 /* -------------------------------------------------------------------------- */
@@ -43,10 +42,6 @@ const getElementsBySelector = (selector) => {
 // const numbers: Array<number> = [101, 201, 301];
 const numbers = [101, 201, 301];
 numbers.push(1004);
-
-
-// Module { logger }
-
 export const logger = {
     log(message) {
         console.log(message);

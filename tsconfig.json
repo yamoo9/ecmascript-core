@@ -1,6 +1,7 @@
 { 
   "compilerOptions": { 
     "target": "ES2015", 
+    "outDir": "./js",
     "module": "ESNext", 
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true, 

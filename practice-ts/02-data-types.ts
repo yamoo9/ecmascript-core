@@ -71,7 +71,7 @@ type LoggerType = {
   info(infoMessage: string): void;
 }
 
-const logger: LoggerType = {
+export const logger: LoggerType = {
   log(message) {
     console.log(message);
   }, 
