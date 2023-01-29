@@ -1,6 +1,6 @@
-# 러닝 ECMAScript
+# ECMAScript 코어
 
-ECMAScript(JavaScript)에 대해 학습합니다.
+ECMAScript(JavaScript) 학습 브랜치 practice
 
 1. code structure
 1. variables
