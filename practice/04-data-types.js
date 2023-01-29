@@ -5,7 +5,11 @@
 /* ECMAScript의 8가지 데이터 타입 -------------------------------------------- */
 
 // 1. 존재하지 않는(nothing) 값 / 비어있는(empty) 값 / 알 수 없는(unknown) 값
-let dontHas;
+let dontHas = true;
+
+// JavaScript는 동적 형 지정 언어라서 문제 삼지 않아요 ㅠㅡㅠ
+// TypeScript는 정적 형 지정 언어라서 문제라고 알려줘요!!!
+dontHas = '예!';
 
 // 2. 값이 할당되지 않은 상태
 let isNotDefined;
