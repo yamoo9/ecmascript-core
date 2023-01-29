@@ -42,3 +42,4 @@ ECMAScript(JavaScript) 학습 브랜치 practice
 
 - [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
 - [JavaScript, MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript)
+- [patterns.dev](https://www.patterns.dev/)
