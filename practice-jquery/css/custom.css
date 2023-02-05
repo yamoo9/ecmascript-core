@@ -1,0 +1,15 @@
+.nav {
+  margin-bottom: 80px;
+  font-size: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3b3a3f;
+}
+
+.nav a:hover {
+  color: #343475;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

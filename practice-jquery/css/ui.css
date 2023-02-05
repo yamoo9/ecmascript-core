@@ -6,14 +6,14 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1rem;
   padding: 50px 50px 100px;
+  font-size: 1rem;
 }
 * {
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
   border: none;
+  padding: 0;
 }
 button {
   cursor: pointer;
@@ -30,21 +30,21 @@ hr {
 .popup {
   display: none;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--white);
   z-index: 100;
+  top: 50%;
+  left: 50%;
   width: 300px;
   height: 300px;
+  background-color: var(--white);
+  transform: translate(-50%, -50%);
 }
 .dimmed {
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: var(--black2);
 }
 
@@ -55,35 +55,35 @@ hr {
 }
 .table-type2 th,
 .table-type2 td {
-  padding: 1.6rem 2rem;
   border-left: 1px solid #e1e1e1;
+  padding: 1.6rem 2rem;
 }
 .table-type2 th {
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333;
   text-align: left;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: #333;
 }
 .table-type2 th:first-child {
   border-left: none;
 }
 .table-type2 td {
-  font-size: 1.4rem;
   line-height: 2rem;
+  font-size: 1.4rem;
   color: #777;
 }
 .table-type2 tr + tr {
   border-top: 1px solid #e1e1e1;
 }
 .table-type2 .equired {
-  color: #e20000;
   padding-left: 0.5rem;
+  color: #e20000;
 }
 
 .table-wrap {
+  position: relative;
   width: 100%;
   overflow-x: hidden;
-  position: relative;
 }
 
 .table-wrap > table {
@@ -92,31 +92,31 @@ hr {
 .table-wrap::before {
   content: '';
   position: absolute;
-  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .table-wrap::after {
   content: '클릭 후 \a드레그&드롭 \a하세요';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 11.2rem;
-  height: 11.2rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11.2rem;
+  height: 11.2rem;
+  border-radius: 100%;
   padding: 0.5rem;
-  white-space: pre;
-  line-height: 1.5;
   text-align: center;
+  line-height: 1.5;
+  white-space: pre;
   font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translate(-50%, -50%);
 }
 .table-wrap.active {
   overflow-x: auto;
@@ -134,8 +134,8 @@ hr {
 
 /* select */
 .select__list {
-  position: absolute;
   display: none;
+  position: absolute;
 }
 
 /* tabs */
@@ -184,20 +184,20 @@ hr {
   }
 }
 .gallery-type3__more {
-  font-weight: 700;
-  font-size: 1.6rem;
   line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #333;
 }
 .gallery-type3__txt {
-  font-size: 1.6rem;
   line-height: 2.4rem;
+  font-size: 1.6rem;
   color: #777;
 }
 @media (min-width: 0) and (max-width: 1023px) {
   .gallery-type3__txt {
-    font-size: 1.4rem;
     line-height: 2.2rem;
+    font-size: 1.4rem;
   }
 }
 .gallery-type3 > div {
@@ -212,16 +212,16 @@ hr {
 }
 .gallery-box__big img {
   width: 100%;
+  max-width: 48.8rem;
   height: 100%;
+  max-height: 30rem;
   -o-object-fit: cover;
   object-fit: cover;
-  max-width: 48.8rem;
-  max-height: 30rem;
 }
 .gallery-box__list {
   display: flex;
-  gap: 0.2rem;
   padding-top: 0.4rem;
+  gap: 0.2rem;
 }
 .gallery-box__list li {
   flex: 1;
@@ -238,21 +238,21 @@ hr {
 
 /* btn */
 .btn-comment {
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #777;
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   background: none;
+  color: #777;
+  gap: 0.8rem;
 }
 .btn-comment::after {
   content: '';
+  transform: translateY(25%);
   border-width: 0.6rem;
   border-style: solid;
   border-color: #777 transparent transparent transparent;
-  transform: translateY(25%);
 }
 .btn-comment.active::after {
   transform: translateY(-25%) rotate(180deg);
