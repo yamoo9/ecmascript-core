@@ -13,3 +13,7 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+.tabs [class*="--active"] {
+  background: #e2e2e2;
+}

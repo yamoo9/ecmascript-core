@@ -82,7 +82,7 @@ export default class Tabs {
   active(index) {
     this.tabs[index].click();
   }
-  deactive(index) {
-    return this;
+  deactive() {
+    this.removeActiveClass();
   }
 }
