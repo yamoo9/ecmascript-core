@@ -14,11 +14,30 @@
 // - [x] jQuery 코드 리뷰
 // - [x] jQuery 코드 리팩터링
 // - [x] Vanilla Script 버전 작성
-// - [ ] 재사용성을 고려한 설계 (함수 중심)
+// - [x] 재사용성을 고려한 설계 (함수 중심)
 // - [ ] 재사용성을 고려한 설계 (클래스 중심)
 // --------------------------------------------------------------------------
 
 // import './ui/tabs.js';
-import createTabs from './ui/createTabs.js';
 
-createTabs('.tabs');
+// import createTabs from './ui/createTabs.js';
+// createTabs('.tabs');
+
+import Tabs from './ui/class/Tabs.js';
+
+const tabs = new Tabs('.tabs');
+
+setTimeout(() => {
+  console.log('2번째 탭 활성화');
+  tabs.active(1);
+}, 1000);
+
+setTimeout(() => {
+  console.log('1번째 탭 활성화');
+  tabs.active(0);
+}, 2000);
+
+setTimeout(() => {
+  console.log('3번째 탭 활성화');
+  tabs.active(2);
+}, 3000);
