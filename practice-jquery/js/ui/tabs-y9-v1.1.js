@@ -11,7 +11,6 @@ const $tabPanels = $component.find(config.panelSelector);
 
 function init() {
   setIndex();
-
   bindEvents();
 }
 
@@ -30,8 +29,8 @@ function handleActivePanel(e) {
     removeActivedClassName($tabs);
     removeActivedClassName($tabPanels);
 
-    active($tabs.eq(index));
-    active($tabPanels.eq(index));
+    addActiveClassName($tabs.eq(index));
+    addActiveClassName($tabPanels.eq(index));
   }
 }
 
@@ -41,7 +40,7 @@ function removeActivedClassName($target) {
     .removeClass(config.activeClassName);
 }
 
-function active($target) {
+function addActiveClassName($target) {
   $target.addClass(config.activeClassName);
 }
 
