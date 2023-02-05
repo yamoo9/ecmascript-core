@@ -1,9 +1,9 @@
 {
   "scripts": {
     "start": "live-server --host=localhost --port=3000",
-    "start:jquery": "live-server practice-jquery --open=jquery.html",
-    "compile": "tsc",
-    "watch": "npm run compile -- --watch"
+    "learn": "live-server practice-jquery --open=jquery.html --host=localhost --port=3000",
+    "watch": "npm run compile -- --watch",
+    "compile": "tsc"
   },
   "devDependencies": {
     "live-server": "1.2.2",
