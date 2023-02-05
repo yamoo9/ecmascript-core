@@ -2,7 +2,7 @@
 const config = {
   activeClassName: 'active',
   tabSelector: 'button',
-  panelSelector: 'panel',
+  panelSelector: 'article',
 };
 
 // Tabs 컴포넌트
