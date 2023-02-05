@@ -23,7 +23,7 @@ function bindEvents() {
 }
 
 function handleActivePanel(e) {
-  if (e.target.matches('button')) {
+  if (e.target.matches(config.tabSelector)) {
     let index = e.target.dataset.index;
 
     removeActivedClassName($tabs);
