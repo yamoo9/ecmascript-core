@@ -1,4 +1,5 @@
 export default class Tabs {
+  
   static defaultOptions = {
     tabSelector: 'button',
     panelSelector: 'article',
@@ -15,16 +16,16 @@ export default class Tabs {
 
     this.config = { ...Tabs.defaultOptions, ...userConfig };
 
-    this.init();
+    this.#init();
   }
 
-  init() {
-    this.findControls();
-    this.setDataIndex();
-    this.bindEvents();
+  #init() {
+    this.#findControls();
+    this.#setDataIndex();
+    this.#bindEvents();
   }
 
-  findControls() {
+  #findControls() {
     this.tabs = Array.from(
       this.component.querySelectorAll(this.config.tabSelector)
     );
@@ -33,26 +34,26 @@ export default class Tabs {
     );
   }
 
-  setDataIndex() {
+  #setDataIndex() {
     this.tabs.forEach((tab, index) => {
       tab.dataset.index = index;
     });
   }
 
-  bindEvents() {
-    this.component.addEventListener('click', this.handleClick.bind(this));
+  #bindEvents() {
+    this.component.addEventListener('click', this.#handleClick.bind(this));
   }
 
-  handleClick(e) {
+  #handleClick(e) {
     let index = e.target.dataset.index;
 
     if (e.target.matches(this.config.tabSelector)) {
-      this.removeActiveClass();
-      this.addActiveClass(index);
+      this.#removeActiveClass();
+      this.#addActiveClass(index);
     }
   }
 
-  removeActiveClass() {
+  #removeActiveClass() {
     const activeTabClassName = `${this.config.styleClassName}--${this.config.activeClassName}`;
 
     const activedTab = this.tabs.find((tab) => {
@@ -72,7 +73,7 @@ export default class Tabs {
     }
   }
 
-  addActiveClass(index) {
+  #addActiveClass(index) {
     this.tabs[index].classList.add(
       `${this.config.styleClassName}--${this.config.activeClassName}`
     );
@@ -83,6 +84,6 @@ export default class Tabs {
     this.tabs[index].click();
   }
   deactive() {
-    this.removeActiveClass();
+    this.#removeActiveClass();
   }
 }

@@ -37,22 +37,27 @@ import Tabs from './ui/class/Tabs.js';
 
 const tabs = new Tabs('.tabs');
 
-setTimeout(() => {
-  console.log('2번째 탭 활성화');
-  tabs.active(1);
-}, 1000);
+let autoPlay = true;
+let timeout = 1000;
 
-setTimeout(() => {
-  console.log('1번째 탭 활성화');
-  tabs.active(0);
-}, 2000);
-
-setTimeout(() => {
-  console.log('3번째 탭 활성화');
-  tabs.active(2);
-}, 3000);
-
-setTimeout(() => {
-  console.log('모든 탭 비활성화');
-  tabs.deactive();
-}, 4000);
+if (autoPlay) {
+  setTimeout(() => {
+    console.log('2번째 탭 활성화');
+    tabs.active(1);
+  }, timeout);
+  
+  setTimeout(() => {
+    console.log('1번째 탭 활성화');
+    tabs.active(0);
+  }, timeout * 2);
+  
+  setTimeout(() => {
+    console.log('3번째 탭 활성화');
+    tabs.active(2);
+  }, timeout * 3);
+  
+  setTimeout(() => {
+    console.log('모든 탭 비활성화');
+    tabs.deactive();
+  }, timeout * 4);
+}
