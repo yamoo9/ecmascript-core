@@ -9,9 +9,17 @@ const $component = $('.tabs');
 const $tabs = $component.find(config.tabSelector);
 const $tabPanels = $component.find(config.panelSelector);
 
+const $tabStyle = $component.children().eq(0);
+let tabStyleClassName = '';
+
 function init() {
   setIndex();
   bindEvents();
+  tabStyleClassName = getTabStyleClassName();
+}
+
+function getTabStyleClassName() {
+  return $tabStyle.attr('class');
 }
 
 function setIndex() {
@@ -35,13 +43,25 @@ function handleActivePanel(e) {
 }
 
 function removeActivedClassName($target) {
-  $target
-    .filter(`.${config.activeClassName}`)
-    .removeClass(config.activeClassName);
+  if ($target.is(config.tabSelector)) {
+    let removeClassName = `.${tabStyleClassName}--${config.activeClassName}`;
+
+    $target
+      .filter(removeClassName)
+      .removeClass(removeClassName.replace('.', ''));
+  } else {
+    $target
+      .filter(`.${config.activeClassName}`)
+      .removeClass(config.activeClassName);
+  }
 }
 
 function addActiveClassName($target) {
-  $target.addClass(config.activeClassName);
+  if ($target.is(config.tabSelector)) {
+    $target.addClass(`${tabStyleClassName}--${config.activeClassName}`);
+  } else {
+    $target.addClass(config.activeClassName);
+  }
 }
 
 init();
