@@ -13,8 +13,13 @@ const b = {
   methodB() {},
 };
 
+// ES5 (2009)
 const c = Object.assign({}, a, b);
+
+// ES NEXT (2015+)
+const d = { ...a, ...b };
 
 console.log(a);
 console.log(b);
 console.log(c);
+console.log(d);
