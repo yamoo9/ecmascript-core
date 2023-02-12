@@ -22,7 +22,7 @@
       <a href="./vanilla-script.html">Vanilla Script 버전</a>
     </nav>
 
-    <div class="demo-tabs">
+    <div hidden class="demo-tabs">
       <div class="tabs">
         <nav class="tab-type1">
           <ul>
@@ -48,6 +48,17 @@
         <article>탭내용2</article>
         <article>탭내용3</article>
       </div>
+    </div>
+
+    <div class="practice-modal-dialog">
+      <button 
+        type="button" 
+        data-dialog-opener="dialog-a"
+      >
+        open dialog
+      </button>
+
+      <div data-dialog="dialog-a"></div>
     </div>
     
     <div hidden class="demo-modal-dialog">
@@ -257,6 +268,20 @@
       <div>test</div>
     </div>
 
+
+    <!-- Template -->
+    
+    <template data-dialog-template="dialog-a">
+      <div data-dialog-head>
+        <h2>head</h2>  
+      </div>
+      <div data-dialog-main>
+        <h2>main</h2>  
+      </div>
+      <div data-dialog-foot>
+        <button type="button" data-dialog-closer="dialog-a">close dialog</button>
+      </div>
+    </template>
   </body>
 
 </html>
