@@ -13,10 +13,25 @@
     <link rel="icon" href="https://jquery.com/jquery-wp-content/themes/jquery.com/i/favicon.ico" />
     
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="plugins/jQuery.highlight.js"></script>
+    <script>
+      jQuery(($) => {
+        const $highlights = $('.highlights');
+        $highlights.highlight({
+          color: 'yellow'
+        });
+      });
+    </script>
     <script src="/js/ui/index.js" type="module"></script>
   </head>
 
   <body>
+
+    <div class="highlights">highlights 1</div>
+    <div class="highlight">highlights 2</div>
+    <div class="highlights">highlights 3</div>
+    <div class="highlight">highlights 4</div>
+    <div class="highlights">highlights 5</div>
 
     <nav class="nav">
       <a href="./vanilla-script.html">Vanilla Script 버전</a>
