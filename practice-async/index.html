@@ -6,14 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="프론트엔드의 꽃!!" />
   <meta name="theme-color" content="#006eb4" />
-  <link rel="icon" href="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" />
-  <script type="module" src="./4-fetch-api.js"></script>
+  <link rel="icon" href="//www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" />
+  <script src="//unpkg.com/axios/dist/axios.min.js" crossorigin></script>
+  <script type="module" src="./5-axios.js"></script>
 </head>
 <body>
   
-  <button type="button" data-component="CallAsyncButton">사용자 정보 가져오기</button>
+  <section>
+    <h2>Fetch API 예제</h2>
+    <button type="button" data-component="CallAsyncButton">사용자 정보 가져오기</button>
+    <ul data-component="UserList"></ul>
+  </section>
 
-  <ul data-component="UserList"></ul>
+  <hr />
+
+  <section>
+    <h2>Axios 예제</h2>
+    <div>
+      <div>
+        <label for="photo-count">가져올 사진 갯수</label>
+        <input id="photo-count" type="number" value="10" data-component="PhotoCountInput" />
+      </div>
+      <button type="button" data-component="FetchPhotoButton">사진 가져오기</button>
+    </div>
+    <ul data-component="PhotoList">
+      <li>가져온 사진이 없습니다. 😓</li>
+    </ul>
+  </section>
 
 </body>
 </html>
