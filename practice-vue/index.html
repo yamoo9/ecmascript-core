@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue 프로그래밍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vue CDN을 사용해 애플리케이션을 구성합니다." />
+  <meta name="theme-color" content="#006eb4" />
+  <link rel="icon" href="//www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" />
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+
+  <noscript>이 애플리케이션은 JavaScript 구동이 필요합니다.</noscript>
+
+  <div id="app">
+    <h1>{{ greetingMessage }}</h1>
+    <p v-if="!sincerity">{{ description }}</p>
+    <p v-else>{{ realDescription }}</p>
+  </div>
+  
+</body>
+</html>
