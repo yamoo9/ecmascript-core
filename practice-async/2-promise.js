@@ -12,10 +12,10 @@ export const delay = (timeount = 1000) =>
     }, timeount);
   });
 
-const onFulfilment = (response) => console.log(response.message);
-const onRejection = (error) => console.error(`${error.reason} : ${error.message}`);
-const OnFinally = () => console.log('understaing Promise process');
+// const onFulfilment = (response) => console.log(response.message);
+// const onRejection = (error) => console.error(`${error.reason} : ${error.message}`);
+// const OnFinally = () => console.log('understaing Promise process');
 
-delay().then(onFulfilment).catch(onRejection).finally(OnFinally);
-delay(3000).then(onFulfilment).catch(onRejection).finally(OnFinally);
-delay(5000).then(onFulfilment).catch(onRejection).finally(OnFinally);
+// delay().then(onFulfilment).catch(onRejection).finally(OnFinally);
+// delay(3000).then(onFulfilment).catch(onRejection).finally(OnFinally);
+// delay(5000).then(onFulfilment).catch(onRejection).finally(OnFinally);
